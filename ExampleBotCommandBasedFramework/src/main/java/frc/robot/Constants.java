@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.motorcontrol.Talon;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -22,6 +24,12 @@ package frc.robot;
  public final class Constants {
 
     //example variable
-    //public static int numberNeeded = 19; //this is now globally accesible throught the project
+    public static final int numberNeeded = 19; //this is now globally accesible throught the project
+
+    //define talon ports for drivetrain
+    public static final int DRIVETRAIN_LEFT_FRONT_TALON = 0;
+    public static final int DRIVETRAIN_RIGHT_FRONT_TALON = 0;
+    public static final int DRIVETRAIN_LEFT_BACK_TALON = 0;
+    public static final int DRIVETRAIN_RIGHT_BACK_TALON = 0;
 
 }
