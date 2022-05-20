@@ -3,9 +3,6 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot;
-
-import edu.wpi.first.wpilibj.motorcontrol.Talon;
-
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -27,9 +24,8 @@ import edu.wpi.first.wpilibj.motorcontrol.Talon;
     public static final int numberNeeded = 19; //this is now globally accesible throught the project
 
     //define talon ports for drivetrain
-    public static final int DRIVETRAIN_LEFT_FRONT_TALON = 0;
-    public static final int DRIVETRAIN_RIGHT_FRONT_TALON = 0;
-    public static final int DRIVETRAIN_LEFT_BACK_TALON = 0;
-    public static final int DRIVETRAIN_RIGHT_BACK_TALON = 0;
-
+    public static final int DRIVETRAIN_LEFT_FRONT_TALON = 3;
+    public static final int DRIVETRAIN_LEFT_BACK_TALON = 4;
+    public static final int DRIVETRAIN_RIGHT_FRONT_TALON = 1;
+    public static final int DRIVETRAIN_RIGHT_BACK_TALON = 2;
 }
