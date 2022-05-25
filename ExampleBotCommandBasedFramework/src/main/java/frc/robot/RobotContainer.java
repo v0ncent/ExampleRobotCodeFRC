@@ -24,7 +24,7 @@ public class RobotContainer {
 
 
   // define our joystick for controlling robot
-  public static Joystick driverController = new Joystick(Constants.DRIVER_CONTROLLER);
+  public static final Joystick driverController = new Joystick(Constants.DRIVER_CONTROLLER);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -32,8 +32,9 @@ public class RobotContainer {
     configureButtonBindings(); /*Note that this is in a constructor so that means whenever
     this class is called it will call this method that is defined below */ 
 
-    //set DriveTrain subsystem's default command to our arcade drive command
-    m_drivetrain.setDefaultCommand(new ArcadeDrive());
+    //set DriveTrain subsystem's default command to our arcade drive command 
+    // and pass in our drivetrain subsystem and driverController
+    m_drivetrain.setDefaultCommand(new ArcadeDrive(m_drivetrain, driverController));
   }
 
   /**

@@ -75,7 +75,7 @@ public class Robot extends TimedRobot {
   /** This function is called periodically during autonomous. */
   @Override
   public void autonomousPeriodic(){
-    //this is called perioudically at the start of every match during the auto mode
+    
   }
 
   @Override

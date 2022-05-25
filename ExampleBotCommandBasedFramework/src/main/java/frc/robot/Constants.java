@@ -23,11 +23,11 @@ package frc.robot;
     //example variable
     public static final int numberNeeded = 19; //this is now globally accesible throught the project
 
-    //define talon ports for drivetrain
-    public static final int DRIVETRAIN_LEFT_FRONT_TALON = 3;
-    public static final int DRIVETRAIN_LEFT_BACK_TALON = 4;
-    public static final int DRIVETRAIN_RIGHT_FRONT_TALON = 1;
-    public static final int DRIVETRAIN_RIGHT_BACK_TALON = 2;
+    //define victor ports for drivetrain
+    public static final int DRIVETRAIN_LEFT_FRONT_VICTOR = 3;
+    public static final int DRIVETRAIN_LEFT_BACK_VICTOR = 4;
+    public static final int DRIVETRAIN_RIGHT_FRONT_VICTOR = 1;
+    public static final int DRIVETRAIN_RIGHT_BACK_VICTOR = 2;
     //define our driver controller
     public static final int DRIVER_CONTROLLER = 0;
 
