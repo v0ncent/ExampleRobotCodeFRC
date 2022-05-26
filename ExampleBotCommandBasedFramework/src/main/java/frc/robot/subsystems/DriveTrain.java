@@ -33,7 +33,7 @@ public class DriveTrain extends SubsystemBase {
          rightBackVictor = new WPI_VictorSPX(Constants.DRIVETRAIN_RIGHT_BACK_VICTOR);
          leftVictors = new MotorControllerGroup(rightFrontVictor, rightBackVictor);
          leftVictors.setInverted(true); //note this inverted to allow for motors to turn the same direction
-         leftVictors = new MotorControllerGroup(leftFrontVictor, leftBackVictor);
+         rightVictors = new MotorControllerGroup(leftFrontVictor, leftBackVictor);
          differentialDrive = new DifferentialDrive(leftVictors,rightVictors);
      }
          //create arcadeDrive method
