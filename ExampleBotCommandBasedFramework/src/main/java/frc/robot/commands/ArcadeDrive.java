@@ -31,8 +31,8 @@ public class ArcadeDrive extends CommandBase {
   @Override
   public void execute() {
     //define our movespeed and rotatespeed variables with the get raw method of the joystick
-    double moveSpeed = -joystick.getRawAxis(Constants.DRIVER_CONTROLLER_MOVE_AXIS);
-    double rotateSpeed = joystick.getRawAxis(Constants.DRIVER_CONTROLLER_ROTATE_AXIS);
+    double moveSpeed = -joystick.getRawAxis(Constants.DRIVER_CONTROLLER_MOVE_AXIS);//1 to -1
+    double rotateSpeed = joystick.getRawAxis(Constants.DRIVER_CONTROLLER_ROTATE_AXIS); // 1 to -1
 
     //call arcade drive method
     l_DriveTrain.arcadeDrive(moveSpeed, rotateSpeed);

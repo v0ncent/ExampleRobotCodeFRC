@@ -23,7 +23,6 @@ public class DriveTrain extends SubsystemBase {
      //create motor controller group for left and right talons
      MotorControllerGroup leftVictors;
      MotorControllerGroup rightVictors;
- 
      //create constructor for drivetrain that sets needed victor motors
      public DriveTrain(){
          //set talons to our constants
@@ -42,9 +41,25 @@ public class DriveTrain extends SubsystemBase {
     in two double parameters moveSped and rotateSpeed.
     */
     public void arcadeDrive(double moveSpeed, double rotateSpeed){
+      /*
+      Before we do anything with our moveSpeed or RotateSpeed we
+      want to set some conditionals as to avoid it shorting out the 
+      motors.
+       */
+        if(moveSpeed == 1){ //we basically say when we gun it dont max out motor just go just below max
+          moveSpeed = 0.95;
+        }
+        if(moveSpeed == -1){
+          moveSpeed = -0.95;
+        }
+        if(rotateSpeed == 1){
+          rotateSpeed = 0.95;
+        }
+        if(rotateSpeed == -1){
+          rotateSpeed = -0.95 ;
+        }
         // now here we will call the differential drives arcadeDrive methodx`
         differentialDrive.arcadeDrive(moveSpeed, rotateSpeed);
-
         /*
         now if we wanted this to manipulate this to not be 1 to 1 we would manipulate
         moveSpeed and rotateSpeed, we would want to do this to allow for smoothing of
