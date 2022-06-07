@@ -23,7 +23,6 @@ public class ArcadeDrive extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    System.out.println("I Have Run");
     l_DriveTrain.arcadeDrive(0, 0);
   }
 

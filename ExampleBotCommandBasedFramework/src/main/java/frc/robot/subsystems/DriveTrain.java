@@ -49,15 +49,19 @@ public class DriveTrain extends SubsystemBase {
         if(moveSpeed == 1){ //we basically say when we gun it dont max out motor just go just below max
           moveSpeed = 0.95;
         }
+
         if(moveSpeed == -1){
           moveSpeed = -0.95;
         }
+
         if(rotateSpeed == 1){
           rotateSpeed = 0.95;
         }
+
         if(rotateSpeed == -1){
           rotateSpeed = -0.95 ;
         }
+        
         // now here we will call the differential drives arcadeDrive methodx`
         differentialDrive.arcadeDrive(moveSpeed, rotateSpeed);
         /*

@@ -28,8 +28,10 @@ package frc.robot;
     public static final int DRIVETRAIN_LEFT_BACK_VICTOR = 4;
     public static final int DRIVETRAIN_RIGHT_FRONT_VICTOR = 1;
     public static final int DRIVETRAIN_RIGHT_BACK_VICTOR = 2;
+
     //define our driver controller
     public static final int DRIVER_CONTROLLER = 0;
+    
     //define our driver variables
     public static final int DRIVER_CONTROLLER_MOVE_AXIS = 1;
     public static final int DRIVER_CONTROLLER_ROTATE_AXIS = 2;
