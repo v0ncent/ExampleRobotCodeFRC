@@ -19,19 +19,15 @@ package frc.robot;
  them to be easily accessed and changed.
 */
  public final class Constants {
-
     //example variable
     public static final int numberNeeded = 19; //this is now globally accesible throught the project
-
     //define victor ports for drivetrain
     public static final int DRIVETRAIN_LEFT_FRONT_VICTOR = 3;
     public static final int DRIVETRAIN_LEFT_BACK_VICTOR = 4;
     public static final int DRIVETRAIN_RIGHT_FRONT_VICTOR = 1;
     public static final int DRIVETRAIN_RIGHT_BACK_VICTOR = 2;
-
     //define our driver controller
     public static final int DRIVER_CONTROLLER = 0;
-    
     //define our driver variables
     public static final int DRIVER_CONTROLLER_MOVE_AXIS = 1;
     public static final int DRIVER_CONTROLLER_ROTATE_AXIS = 2;
